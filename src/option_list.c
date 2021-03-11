@@ -87,7 +87,7 @@ void option_unused(list *l)
     while(n){
         kvp *p = (kvp *)n->val;
         if(!p->used){
-            fprintf(stderr, "Unused field: '%s = %s'\n", p->key, p->val);
+            // fprintf(stderr, "Unused field: '%s = %s'\n", p->key, p->val);
         }
         n = n->next;
     }

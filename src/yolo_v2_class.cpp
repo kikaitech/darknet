@@ -141,7 +141,7 @@ LIB_API Detector::Detector(std::string cfg_filename, std::string weight_filename
 #ifdef GPU
     //check_cuda( cudaSetDevice(cur_gpu_id) );
     cuda_set_device(cur_gpu_id);
-    printf(" Used GPU %d \n", cur_gpu_id);
+    // printf(" Used GPU %d \n", cur_gpu_id);
 #endif
     network &net = detector_gpu.net;
     net.gpu_index = cur_gpu_id;
